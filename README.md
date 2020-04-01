@@ -63,7 +63,7 @@ Assembly mini guide
 11. solder the switch
 12. solder the battery holder
 12. carefully inspect and measure everything again
-13. insert a CR2025 or CR2032 cell
+13. insert a CR2025 or CR2032 cell (positive terminal toucing the metal bracket of the holder)
 14. cross fingers and press the button!
 
 Did it light up? :)
@@ -75,6 +75,26 @@ Here are some things you want to check:
 
 ![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/troubleshooting.png)
 
+| Pads / Test points | Multimeter mode       | Expected result            | Repairing it               |
+| ------------------ | --------------------- | -------------------------- | -------------------------- |
+| `6` to `GND`       | `resistance`          | >500 KOhm                  | check for solder bridges around U1 and C1 |
+| `1` to `GND`       | `resistance`          | >500 KOhm                  | check for solder bridges around U1 and C1 |
+| `3` to `GND`       | `resistance`          | ~100Ohm                    | check R1 |
+| `7` to `6`         | `diode test`          | With the positive terminal on `7` and COM/Negative on `6` D1 should conduct. | Fix polarity of D1 |
+| `5` to `8`         | `diode test`          | With the positive terminal on `5` and COM/Negative on `8` LED1 should light up. | Fix polarity of LED1 |
+| `8` to `3`         | `diode test`          | With the positive terminal on `8` and COM/Negative on `3` LED2 should light up. | Fix polarity of LED2 |
+| `4` to `GND`       | `resistance`          | 400KOhm < x < 1MOhm        | check the solder joints on U1, R2, S1 and the orientation of S1
+| `4` to `6`         | `continuity`          | Open circuit when S1 **is not pressed** | check the orientation of S1
+| `4` to `6`         | `continuity`          | Continuity when S1 **is pressed** | check the orientation of S1
+| `4` to `6`         | `continuity`          | Continuity when S1 **is pressed** | check the orientation of S1
+
+
+Orientation of components:
+
+- U1 has a PIN1 mark on its case (small dot) which should align with the `pad 1` in the image above
+- D1 has a cathode mark (two lines engraved in case) which should be facing `pad 6`
+- LED1 has a green cathode mark on its side which should line up with `pad 8` (dot mark on silkscreen)
+- LED2 has a green cathode mark on its side which should line up with `pad 3` (dot mark on silkscreen)
 
 Polarity of SMT parts
 ---------------------
