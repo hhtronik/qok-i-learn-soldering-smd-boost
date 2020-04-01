@@ -114,7 +114,7 @@ Components
 | Ref. | Part                        | Notes / Alternative parts  |
 | ---- | --------------------------- | -------------------------- |
 | D1   | `Diodes Inc. 1N5819HW1`     | `MBR0520LT1G` or any other SOD123 Schottky diode with If > 500mA and low Vf
-| L1   | `TDK VLS252012HBU-220M`     | `Murata LQH2HPZ220MJRL` / 22uH 2.5x2.0mm inductor
+| L1   | `Bourns CVH252009-4R7M`     | `Murata 1239AS-H-4R7M` / 4.7uH 1008 multilayer inductor
 | U1   | `Hexin  HX3001`             | `Chipown AP2000ATCER` / Current mode step up converter SOT23-6
 | C1   | `Samsung CL21A106KPFNNNF`   | 10uF 0805 X5R 10V MLC capacitor
 | C2   | `Samsung CL21B474KAFNNNE`   | 470nF 0805 X7R 25V MLC capacitor
