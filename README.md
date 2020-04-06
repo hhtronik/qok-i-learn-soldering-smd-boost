@@ -48,8 +48,7 @@ Assembly mini guide
 > give one of our simpler SMD kits a try first.
 >
 
-
-1. solder D1 and check (measure) you got the polarity right (it should conduct from the battery holder pad next to it to L1)
+1. solder Q1
 2. solder C1
 3. solder R1
 4. solder C2
@@ -80,7 +79,6 @@ Here are some things you want to check:
 | `6` to `GND`       | `resistance`          | >500 KOhm                  | check for solder bridges around U1 and C1 |
 | `1` to `GND`       | `resistance`          | >500 KOhm                  | check for solder bridges around U1 and C1 |
 | `3` to `GND`       | `resistance`          | ~100Ohm                    | check R1 |
-| `7` to `6`         | `diode test`          | With the positive terminal on `7` and COM/Negative on `6` D1 should conduct. | Fix polarity of D1 |
 | `5` to `8`         | `diode test`          | With the positive terminal on `5` and COM/Negative on `8` LED1 should light up. | Fix polarity of LED1 |
 | `8` to `3`         | `diode test`          | With the positive terminal on `8` and COM/Negative on `3` LED2 should light up. | Fix polarity of LED2 |
 | `4` to `GND`       | `resistance`          | 400KOhm < x < 1MOhm        | check the solder joints on U1, R2, S1 and the orientation of S1
@@ -92,7 +90,6 @@ Here are some things you want to check:
 Orientation of components:
 
 - U1 has a PIN1 mark on its case (small dot) which should align with the `pad 1` in the image above
-- D1 has a cathode mark (two lines engraved in case) which should be facing `pad 6`
 - LED1 has a green cathode mark on its side which should line up with `pad 8` (dot mark on silkscreen)
 - LED2 has a green cathode mark on its side which should line up with `pad 3` (dot mark on silkscreen)
 
@@ -113,7 +110,7 @@ Components
 
 | Ref. | Part                        | Notes / Alternative parts  |
 | ---- | --------------------------- | -------------------------- |
-| D1   | `Diodes Inc. 1N5819HW1`     | `MBR0520LT1G` or any other SOD123 Schottky diode with If > 500mA and low Vf
+| Q1   | `On Semiconductors FDN306P` | Low RDS-On P-Channel MOSFET 
 | L1   | `Bourns CVH252009-4R7M`     | `Murata 1239AS-H-4R7M` / 4.7uH 1008 multilayer inductor
 | U1   | `Hexin  HX3001`             | `Chipown AP2000ATCER` / Current mode step up converter SOT23-6
 | C1   | `Samsung CL21A106KPFNNNF`   | 10uF 0805 X5R 10V MLC capacitor
@@ -132,6 +129,7 @@ I don't know anything about electronics, what can I learn?
 Besides soldering technique we'd say:
 
 - what a boost/step-up converter is and how it works
+- reverse polarity protection with a P-Channel MOSFET
 - why some of the components were chosen
 
 Watch others do
