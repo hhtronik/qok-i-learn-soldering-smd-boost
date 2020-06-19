@@ -122,9 +122,9 @@ Components
 | Q1   | `On Semiconductors FDN306P` | Low RDS-On P-Channel MOSFET SOT23-3
 | L1   | `Bourns CVH252009-4R7M`     | `Murata 1239AS-H-4R7M` / 4.7uH 1008 multilayer inductor
 | U1   | `Chipown AP2000ATCER`       | Current mode step up converter SOT23-6
-| C1   | `Samsung CL21A106KPFNNNF`   | 10uF 0805 X5R 10V MLC capacitor
-| C2   | `Samsung CL21B474KAFNNNE`   | 470nF 0805 X7R 25V MLC capacitor
-| R1   | `Panasonic ERJ-6ENF51R1V`   | 51 Ohm 0805 1% resistor
+| C1   | `Samsung CL21B104KBCNNNC`   | 100nF 0805 X7R 50V MLC capacitor
+| C2   | `Samsung CL21B104KBCNNNC`   | 100nF 0805 X7R 50V MLC capacitor
+| R1   | `Panasonic ERJ-6ENF100RV`   | 100 Ohm 0805 1% resistor
 | R2   | `Panasonic ERJ-3GEYJ105V`   | 1 MOhm 0603 5% resistor
 | LED1 | `Inolux IN-S126ASUW`        | Side view white LED If = 20mA 
 | LED2 | `Inolux IN-S126ASUW`        | Side view white LED If = 20mA
