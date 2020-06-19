@@ -58,9 +58,9 @@ Assembly mini guide
 5. solder R2
 6. measure you didn't short the positive rail (behing D1) to ground (center pad of the battery holder footprint)
 7. solder L1
-8. solder U1 (**watch out for pin 1 marks on package and PCB to line up**) (tip: add solder to on pad and tack the IC in place, then solder the remaining pins ;)
+8. solder U1 (**watch out for pin 1 marks on package and PCB to line up** as in the picture below) (tip: add solder to on pad and tack the IC in place, then solder the remaining pins ;)
 9. check for solder bridges on U1, check polarity again!
-10. solder both LEDs
+10. solder both LEDs (carefully! These are pretty heat sensitive!)
 11. check the polarity by using the diode test mode. 
 11. solder the switch
 12. solder the battery holder
@@ -101,14 +101,18 @@ Orientation of components:
 Polarity of SMT parts
 ---------------------
 
-About half the components on this PCB are polarized, meaning that their orientation matters
-for them to function properly. Difference components have very different markings on their
+About a third of the components on this PCB are polarized, meaning that their orientation matters
+for them to function properly. Different components have very different markings on their
 case to show their orientation.
 
 As these markings are often engraved into the case using a laser, they can be difficult to
 read thus our recommendation you get some magnifying glass.
 
-![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/finished-pcb.png)
+![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/finished-pcb.jpg)
+
+The LEDs have a cathode band / mark on their back side which must align with the dot mark on the PCB:
+
+![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/side-view-led-pinout.jpg)
 
 Components
 ----------
