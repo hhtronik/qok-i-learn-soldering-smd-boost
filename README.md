@@ -47,6 +47,9 @@ Assembly mini guide
 > If you didn't you should really go watch all of the videos below and maybe
 > give one of our simpler SMD kits a try first.
 >
+> If you feel you need a refresh on soldering SMD parts, have a look at the 
+> ![I learn soldering SMD instructions](https://github.com/hhtronik/qok-i-learn-soldering-smd/blob/master/soldering-instructions.md)
+>
 
 1. solder Q1
 2. solder C1
@@ -89,7 +92,9 @@ Here are some things you want to check:
 
 Orientation of components:
 
-- U1 has a PIN1 mark on its case (small dot) which should align with the `pad 1` in the image above
+![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/closeup-details-ic-pins.jpg)
+
+- U1 has a PIN1 mark on its case (small dot) which should align with the `pad 1` as in the image above
 - LED1 has a green cathode mark on its side which should line up with `pad 8` (dot mark on silkscreen)
 - LED2 has a green cathode mark on its side which should line up with `pad 3` (dot mark on silkscreen)
 
@@ -103,16 +108,16 @@ case to show their orientation.
 As these markings are often engraved into the case using a laser, they can be difficult to
 read thus our recommendation you get some magnifying glass.
 
-`TODO: pictures of the actual components and footprints on the PCB`
+![HHTronik Q.O.K. / I learn soldering SMD Q.O.K PCB rendering](./assets/finished-pcb.png)
 
 Components
 ----------
 
 | Ref. | Part                        | Notes / Alternative parts  |
 | ---- | --------------------------- | -------------------------- |
-| Q1   | `On Semiconductors FDN306P` | Low RDS-On P-Channel MOSFET 
+| Q1   | `On Semiconductors FDN306P` | Low RDS-On P-Channel MOSFET SOT23-3
 | L1   | `Bourns CVH252009-4R7M`     | `Murata 1239AS-H-4R7M` / 4.7uH 1008 multilayer inductor
-| U1   | `Hexin  HX3001`             | `Chipown AP2000ATCER` / Current mode step up converter SOT23-6
+| U1   | `Chipown AP2000ATCER`       | Current mode step up converter SOT23-6
 | C1   | `Samsung CL21A106KPFNNNF`   | 10uF 0805 X5R 10V MLC capacitor
 | C2   | `Samsung CL21B474KAFNNNE`   | 470nF 0805 X7R 25V MLC capacitor
 | R1   | `Panasonic ERJ-6ENF51R1V`   | 51 Ohm 0805 1% resistor
